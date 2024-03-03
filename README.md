@@ -1,33 +1,40 @@
-# Che cos'è un keylogger?
-Un keylogger, in informatica, è uno strumento hardware o software in grado di effettuare la registrazione della tastiera di un computer, cioè è in grado di intercettare e catturare segretamente tutto ciò che viene digitato sulla tastiera senza che l'utente se ne accorga.
+# Keylogger
 
-### NB: Disattivare qualunque antivirus
+## What is a Keylogger?
 
-# scaricare i files
+A keylogger, in computer science, is a hardware or software tool capable of recording the keyboard inputs of a computer, meaning it can secretly intercept and capture everything typed on the keyboard without the user's awareness.
+
+### Note: Disable any antivirus software before running the keylogger.
+
+# Downloading the Files
 
 ```bash
 git clone https://github.com/ArduinoDenis/keylogger.git
 ```
 
-# come installare python?
-- se avete windows 10 o 11 scaricate python dal microsoft store (la procedura è tutta automatica)
-- se avete macOS scaricalo cliccando su [scarica python](https://www.python.org/downloads/macos/)  e scarica ed installa
-- se avete linux aprite un terminale e digitate
+# How to Install Python?
 
-* procedura per linux incluso(macOS)
+- If you have Windows 10 or 11, download Python from the Microsoft Store (the procedure is automatic).
+- If you have macOS, download it by clicking on [Download Python](https://www.python.org/downloads/macos/) and follow the installation instructions.
+- If you have Linux, open a terminal and type the following:
+
+* Procedure for Linux (including macOS)
 ```bash
 sudo apt-get install python3 -y && sudo apt-get install python3-pip
 ```
 
-# come installare la libreria?
-aprire un terminale e copiate ed incollate la seguente riga
+# How to Install the Library?
+
+Open a terminal and copy and paste the following line:
 
 ```bash
 pip3 install pynput  
 ```
-premere invio e attendere che abbia finito.
 
-### avviare lo script
+Press Enter and wait for the installation to complete.
+
+### Running the Script
+
 ```bash
 python3 keylogger.py
 ```
